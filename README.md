@@ -29,6 +29,6 @@ pipenv install -r path/to/requirements.txt
 ```
 5. Run `.py` files
 ```python
-python text_generator_with_gpt_Neo.py # for GPTNeo
-python text_generator_with_gpt2.py # for GPT2
+python GPTNeo.py # for GPTNeo
+python GPT2.py # for GPT2
 ```

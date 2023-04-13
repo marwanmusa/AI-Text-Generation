@@ -2,8 +2,8 @@
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
 # Load Model
-tokenizer = GPT2Tokenizer.from_pretrained('gpt2-large')
-model = GPT2LMHeadModel.from_pretrained('gpt2-large', pad_token_id=tokenizer.eos_token_id)
+tokenizer = GPT2Tokenizer.from_pretrained('gpt2-large', cache_dir="cache/")
+model = GPT2LMHeadModel.from_pretrained('gpt2-large', pad_token_id=tokenizer.eos_token_id, cache_dir="cache/")
 
 # Create function to generate text
 def generate(text, text_length):
@@ -22,6 +22,6 @@ while True:
     text = input('Prompt:')
     text_length = int(input('Text length:'))
     print(generate(text, text_length))
-    next_ = input("Generate Again:")
+    next_ = input("Generate Again - yes/no:")
     if next_.lower() == 'no':
         break
