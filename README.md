@@ -32,3 +32,6 @@ pipenv install -r path/to/requirements.txt
 python GPTNeo.py # for GPTNeo
 python GPT2.py # for GPT2
 ```
+
+> Note
+> You need to adjust your [torch](https://pytorch.org/) installation version to match with your [cuda toolkit](https://developer.nvidia.com/cuda-toolkit) version installed.
